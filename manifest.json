@@ -1,0 +1,30 @@
+{
+    "manifest_version":2,
+    "name" : "Linkedin chrome extension",
+    "version" : "1.0.0",
+     "page_action" : {
+        "default_title": "jsEXT"
+    },
+    
+    "content_scripts":[
+        {
+            "matches":["https://*.linkedin.com/*"],
+            "css" : ["./css/style.css"],
+            "js" : ["./scripts/jquery-3.6.0.min.js", "./scripts/script.js"]
+        }
+    ],
+    "background": {
+        "scripts": [ "./scripts/background.js"]
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab",
+        "<all_urls>"
+    ],
+    "web_accessible_resources": [
+        "./slider.html",
+        "./scripts/jquery-3.6.0.min.js"
+    ]
+
+}

@@ -1,0 +1,1 @@
+Just enable developer mode in your `chrome://extensions`and click on `load unpacked`button and browse to the js chrome extension folder.Run it on linkedin website profile only.Json profile data will be displayed on a sidebar that will appear when you click on the `Linkedin chrome extension`icon.just scroll down a little to get all the data.
